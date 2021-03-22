@@ -1,0 +1,57 @@
+.main-container {
+    display        : flex;
+    justify-content: center;
+}
+
+.flag-container {
+    padding: 5px;
+}
+
+.flag {
+    height: 200px;
+    width : 300px;
+    border: solid 1px #000000;
+}
+
+.flag-ukr {
+    background: linear-gradient(to bottom,
+            rgb(34, 156, 236) 50%,
+            rgb(223, 238, 7) 50%);
+}
+
+.flag-jpn {
+    position: relative;
+    background: radial-gradient(circle at center,
+            #ED2939 65px,
+            #ffffff 65px);
+}
+
+.flag-isl {
+    background:
+        linear-gradient(blue, blue) 0 0 /75px 75px,
+        linear-gradient(blue, blue) 0 100% /75px 75px,
+        linear-gradient(blue, blue) 100% 0 /175px 75px,
+        linear-gradient(blue, blue) 100% 100%/175px 75px,
+        linear-gradient(red, red) 85px 0/ 30px 100%,
+        linear-gradient(red, red) 0 85px/ 100% 30px;
+    background-repeat: no-repeat;
+}
+
+.flag-cze {
+    height: 200px;
+    width : 300px;
+    border: solid 1px #000000;
+    background: linear-gradient(to bottom,
+            white 50%,
+            red 50%);
+}
+
+.flag-cze::after {
+    display      : block;
+    content      : "";
+    width        : 0;
+    height       : 0;
+    border-top   : 100px solid transparent;
+    border-left  : 150px solid #0000ff;
+    border-bottom: 100px solid transparent;
+}
